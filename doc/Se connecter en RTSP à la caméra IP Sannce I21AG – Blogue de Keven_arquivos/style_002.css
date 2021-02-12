@@ -1,0 +1,131 @@
+/*
+ Theme Name:   Blogue de Keven
+ Template:     bento
+*/
+header.site-header .logo-default {
+  color: #666666;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+body article.post.o-excerpt {
+  position: relative;
+  max-height: 250px;
+  overflow: hidden; }
+  body article.post.o-excerpt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(244, 244, 244, 0) 0%, #f4f4f4 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(244, 244, 244, 0) 0%, #f4f4f4 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(244, 244, 244, 0) 0%, #f4f4f4 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f4f4f4', endColorstr='#f4f4f4',GradientType=0 );
+    /* IE6-9 */
+    z-index: 1; }
+  body article.post.o-excerpt .o-more-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    width: calc(100% - 60px);
+    text-align: center;
+    z-index: 2;
+    cursor: pointer; }
+    body article.post.o-excerpt .o-more-btn span {
+      display: inline-block;
+      background: #ffffff;
+      color: #333333;
+      padding: 5px 20px;
+      font-weight: bold;
+      opacity: 0.8;
+      -webkit-transition: all 300ms, background 100ms, color 100ms;
+      -o-transition: all 300ms, background 100ms, color 100ms;
+      transition: all 300ms, background 100ms, color 100ms;
+      font-size: 14px;
+      border-bottom: 2px solid transparent; }
+    body article.post.o-excerpt .o-more-btn:hover span {
+      background: #00b285;
+      color: #ffffff;
+      opacity: 1;
+      border-bottom: 4px solid #007d5e; }
+
+a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"], .gallery a {
+  cursor: zoom-in; }
+
+.ow-more-posts h6 {
+  text-align: center; }
+.ow-more-posts .left {
+  float: left;
+  width: 48%; }
+.ow-more-posts .right {
+  float: right;
+  width: 48%;
+  text-align: right; }
+.ow-more-posts li {
+  padding: 5px 0; }
+  .ow-more-posts li small {
+    margin: 0 10px;
+    color: #a7a7a7; }
+
+body .author-info {
+  display: flex;
+  margin: 0 0 15px 0; }
+  body .author-info .author-avatar {
+    line-height: normal;
+    margin: 0 20px 0 0;
+    flex: 25%; }
+  body .author-info .author-description {
+    margin: 0;
+    padding: 0; }
+
+body #comments.comments-area {
+  padding-top: 20px;
+  padding-top: 2rem; }
+  body #comments.comments-area h3.comments-title {
+    margin-top: 0; }
+  body #comments.comments-area #respond.comment-respond {
+    border-top: 0;
+    margin: 0;
+    padding-top: 0; }
+body #commentform.comment-form:after {
+  content: '';
+  display: block;
+  clear: both; }
+body #commentform.comment-form p.form-submit {
+  float: right; }
+body #commentform.comment-form .inv-recaptcha-holder {
+  float: left; }
+  body #commentform.comment-form .inv-recaptcha-holder .grecaptcha-badge {
+    box-shadow: none !important;
+    border: 1px solid #4a90e2;
+    box-sizing: content-box; }
+
+/*
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/
+*/
+/*
+This element holds injected scripts inside iframes that in
+some cases may stretch layouts. So, we're just hiding it.
+*/
+#fb-root {
+  display: none; }
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important; }
+
+body.home header.entry-header h2.entry-title,
+body.archive header.entry-header h2.entry-title,
+body.search header.entry-header h2.entry-title {
+  margin: 0; }
+body.home footer.entry-footer,
+body.archive footer.entry-footer,
+body.search footer.entry-footer {
+  margin: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */
